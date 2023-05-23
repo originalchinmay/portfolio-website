@@ -1,14 +1,16 @@
 body {
     background-color: #b7ecc5;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     height: 100vh;
+
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
 .container > div {
@@ -16,9 +18,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: white;
+    grid-column: span 4;
     font-size: 60px;
-    border-radius: 60px;
-    height: 300px;
-    width: 300px;
+    border-radius: 26px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
