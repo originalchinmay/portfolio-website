@@ -1,9 +1,9 @@
 body {
   background-color: #b7ecc5;
   margin: 0;
-  padding: 20px;
+  padding: 30px;
   height: 100vh;
-  overflow: hidden
+  /* overflow: hidden */
 }
 
 .container {
