@@ -7,10 +7,13 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  gap: 10px; */
 
   /* For you to make the 6 cards fill the whole height all you
   need to do is use the vh property --> Which stands for viewport height
@@ -19,20 +22,20 @@ body {
   */
 
   height: 100vh;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .container > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 calc(33.33% - 20px);
+  text-align: center;
   background-color: white;
   grid-column: span 4;
   font-size: 60px;
   border-radius: 26px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   height: 100%;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  padding: 20px;
 }
 
 .container > div:hover  {
