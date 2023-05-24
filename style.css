@@ -7,13 +7,13 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px; */
+  display: grid;
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
+  align-items: center; */
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(23vh,1fr));
+  gap: 10px;
 
   /* For you to make the 6 cards fill the whole height all you
   need to do is use the vh property --> Which stands for viewport height
@@ -22,12 +22,12 @@ body {
   */
 
   height: 100%;
-  /* padding: 20px; */
+  padding: 20px;
 }
 
 .container > div {
   display: flex;
-  flex: 0 0 calc(33.33% - 20px);
+  /* flex: 0 0 calc(33.33% - 20px); */
   align-items: center;
   justify-content: center;
   background-color: white;
@@ -40,6 +40,7 @@ body {
 }
 
 .container > div:hover  {
+    border-color: 20px red;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.006);
 }
