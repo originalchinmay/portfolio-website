@@ -1,23 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const portfolioCard = document.getElementById('portfolio-card');
-    
-    portfolioCard.addEventListener('click', function() {
-      window.location.href = './portfolio.html';
+  const portfolioCard = document.getElementById('portfolio-card');
+  const aboutMeCard = document.getElementById('about-me');
+  const contactMeCard = document.getElementById('contact-me');
+
+  function redirectToPage(cardElement, pageUrl) {
+    cardElement.addEventListener('click', function() {
+      window.location.href = pageUrl;
     });
-  });
+  }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const portfolioCard = document.getElementById('about-me');
-    
-  portfolioCard.addEventListener('click', function() {
-    window.location.href = './aboutme.html';
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const portfolioCard = document.getElementById('contact-me');
-    
-  portfolioCard.addEventListener('click', function() {
-    window.location.href = './contactme.html';
-  });
+  redirectToPage(portfolioCard, './portfolio.html');
+  redirectToPage(aboutMeCard, './aboutme.html');
+  redirectToPage(contactMeCard, './contactme.html');
 });
