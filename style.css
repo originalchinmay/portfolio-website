@@ -1,5 +1,5 @@
 body {
-  background-color: #b7ecc5;
+  background-color: #c4f0d6;
   margin: 0;
   /* padding: 30px; */
   height: 100vh;
@@ -35,9 +35,11 @@ body {
   padding: 20px;
   flex-grow: 1;
   flex-basis: 0;
+  border: 2px solid transparent;
 }
 
 .container > div:hover  {
+  border-color: rgb(74, 135, 118);
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.006);
 }
