@@ -1,7 +1,7 @@
 body {
   background-color: #b7ecc5;
   margin: 0;
-  padding: 30px;
+  /* padding: 30px; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,12 +13,12 @@ body {
   /* flex-wrap: wrap; */
   /* justify-content: center;
   align-items: center; */
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, minmax(23vh,1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   height: 100%;
   padding: 20px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .container > div {
