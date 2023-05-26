@@ -37,6 +37,10 @@ body {
     grid-template-rows: repeat(6, 1fr);
     gap: 5px;
   }
+
+  .container > div {
+    height: 200px ;
+  }
 }
 
 
