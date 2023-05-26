@@ -21,6 +21,26 @@ body {
   /* flex-grow: 1; */
 }
 
+/* CSS for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+  }
+}
+
+/* CSS for mobile screens */
+@media (max-width: 414px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+  }
+}
+
+
+
 .container > div {
   display: flex;
   /* flex: 0 0 calc(33.33% - 20px); */
@@ -39,7 +59,8 @@ body {
 }
 
 .container > div:hover  {
-  border-color: rgb(74, 135, 118);
+    border-color: rgb(74, 135, 118);
+    background-color: #fff8fc;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.006);
 }
